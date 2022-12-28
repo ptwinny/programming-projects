@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twining Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Phillip Twining's Project Portfolio</h1>
+  </header>
+  <!-- start nav-bar -->
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>  
+      </li>
+      <li>
+        <a id="profile-link" href="https://github.com/ptwinny/programming-projects">
+          My Github
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- end nav-bar -->
+
+  <main>
+    <!-- start #welcome-section -->
+    <section id="welcome-section" class="welcome-section">
+      <h1>Phillip Twining</h1>
+      <p>front-end web developer</p>
+    </section> 
+    <!-- end #welcome-section -->
+    
+    <!-- start #projects-section -->
+    <section id="projects" class="projects-section">
+      <h1>Some of my projects</h1>
+      <div class="projects-grid">
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p>
+            <span class="project-title">Survey Form</span>
+          </p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Tribute Page</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Technical Documentation Page</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Product Landing Page</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Palindrome Checker</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Roman Numeral Converter</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Caesar Cipher</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Telephone Number Validator</span></p>
+        </a>
+        <a class="project-tile" href="">
+          <img src="" alt="">
+          <p><span class="project-title">Cash Register</span></p>
+        </a>
+      </div>
+    </section>
+    <!-- end #projects-section -->
+
+    <aside>
+    
+    </aside>
+  </main>
+  
+  <footer>
+    <p>footer stuff</p>
+  </footer>
+</body>
+</html>
