@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twining Portfolio</title>
+    <link rel="stylesheet" href="portfolio-ver2.css">
 </head>
 <body>
   <header>
@@ -13,17 +14,17 @@
   <!-- start nav-bar -->
   <nav id="navbar">
     <ul class="nav-list">
-      <li>
+      <li class="nav-item">
         <a href="#welcome-section">About</a>
       </li>
-      <li>
+      <li class="nav-item">
         <a href="#projects">Work</a>
       </li>
-      <li>
+      <li class="nav-item">
         <a href="#contact">Contact</a>  
       </li>
-      <li>
-        <a id="profile-link" href="https://github.com/ptwinny/programming-projects">
+      <li class="nav-item">
+        <a id="profile-link" href="https://github.com/ptwinny/programming-projects" target="_blank">
           My Github
         </a>
       </li>
@@ -43,13 +44,13 @@
     <section id="projects" class="projects-section">
       <h1>Some of my projects</h1>
       <div class="projects-grid">
-        <a class="project-tile" href="">
+        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
           <img src="" alt="">
           <p>
             <span class="project-title">Survey Form</span>
           </p>
         </a>
-        <a class="project-tile" href="">
+        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/tribute-page-kathy-h.html">
           <img src="" alt="">
           <p><span class="project-title">Tribute Page</span></p>
         </a>
@@ -69,15 +70,15 @@
           <img src="" alt="">
           <p><span class="project-title">Roman Numeral Converter</span></p>
         </a>
-        <a class="project-tile" href="">
+        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
           <img src="" alt="">
           <p><span class="project-title">Caesar Cipher</span></p>
         </a>
-        <a class="project-tile" href="">
+        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
           <img src="" alt="">
           <p><span class="project-title">Telephone Number Validator</span></p>
         </a>
-        <a class="project-tile" href="">
+        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
           <img src="" alt="">
           <p><span class="project-title">Cash Register</span></p>
         </a>
@@ -88,8 +89,25 @@
     <aside>
     
     </aside>
+
+    <!-- start contact-section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's collaborate</h2>
+      </div>
+      <div class="contact-links">
+        <a class="btn contact-details" href="mailto:phillip.twining@gmail.com">Send an email</a>
+      </div>
+      <div class="contact-links">
+        <a class="btn contact-details" target="_blank" href="https://github.com/ptwinny">Collaborate on Github</a>
+      </div>
+    </section>
+    <!-- end contact-section -->
+
   </main>
   
+
+
   <footer>
     <p>footer stuff</p>
   </footer>
