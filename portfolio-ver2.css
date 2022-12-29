@@ -1,0 +1,31 @@
+:root {
+  --maine-blue: #1a75cf;
+  --main-orange: #c28619;
+}
+
+body {
+  
+}
+
+a {
+  color: var(--main-orange);
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--maine-blue);
+
+}
+
+.nav-item {
+  display: inline;
+}
+
+h1 {
+
+}
