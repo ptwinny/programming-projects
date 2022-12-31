@@ -1,33 +1,34 @@
 function checkCashRegister(price, cash, cid) {
-  let changeDue = ((cash * 100) - (price * 100)) / 100;
-  let coinAndBillAmounts = [];
-  const denominationValues = [100, 20, 10, 5, 1, .25, .1, .05, .01];
-  let changeReturned = [];
-
   cid.reverse();
+  
+  let changeDue = cash - price;
+  let changeToReturn = [];
+  const denominationValues = [100, 20, 10, 5, 1, .25, .1, .05, .01];
+  let coinAndBillAmounts = [];
+  
   for (let i = 0; i < cid.length; i++) {
-    coinAndBillAmounts.push((cid[i][1] * 100) / (denominationValues[i] / 100));
+    coinAndBillAmounts.push(cid[i][1] / denominationValues[i]);
   }
 
   for (let i = 0; i < cid.length; i++) {
-    while (denominationValues[i] <= changeDue && coinAndBillAmounts[i] > 0) {
-      changeReturned.push([cid[i][0], denominationValues[i]]);
+    while (cid[i][1] >= changeDue && coinAndBillAmounts[i] > 0) {
+      changeToReturn.push([cid[i][0], denominationValues[i]]);
       changeDue -= denominationValues[i];
       coinAndBillAmounts[i]--;
     }
   }
 
 
-  for (let i = 0; i < changeReturned.length; i++) {
-    for (let j = i + 1; j < changeReturned.length; j++) {
-      if (changeReturned[i][1] === changeReturned[j][1]) {
-        changeReturned[i][1] = (changeReturned[i][1] + changeReturned[j][1]);
-        changeReturned.splice(1, 1);
+  for (let i = 0; i < changeToReturn.length; i++) {
+    for (let j = i + 1; j < changeToReturn.length; j++) {
+      if (changeToReturn[i][1] === changeToReturn[j][1]) {
+        changeToReturn[i][1] = (changeToReturn[i][1] + changeToReturn[j][1]);
+        changeToReturn.splice(1, 1);
       }
     }
   }
 
-  console.log(changeReturned);
+  console.log(changeToReturn);
 
 }
 
