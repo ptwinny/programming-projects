@@ -1,35 +1,48 @@
 function checkCashRegister(price, cash, cid) {
-  cid.reverse();
-  
+  // variables and arrays
+  const denominationValues = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, .01];
+  let cidTotal = getCidTotal(cid);
+  let coinAndBillAmounts = [];
   let changeDue = cash - price;
   let changeToReturn = [];
-  const denominationValues = [100, 20, 10, 5, 1, .25, .1, .05, .01];
-  let coinAndBillAmounts = [];
-  
-  for (let i = 0; i < cid.length; i++) {
-    coinAndBillAmounts.push(cid[i][1] / denominationValues[i]);
-  }
+  let amt = 0;
 
-  for (let i = 0; i < cid.length; i++) {
-    while (cid[i][1] >= changeDue && coinAndBillAmounts[i] > 0) {
-      changeToReturn.push([cid[i][0], denominationValues[i]]);
-      changeDue -= denominationValues[i];
-      coinAndBillAmounts[i]--;
+  // main section
+  if (cidTotal < changeDue) {
+    return { status: "INSUFFICIENT_FUNDS", change: [] };
+  } else if (cidTotal === changeDue) {
+    return { status: "CLOSED", change: cid };
+  } else {
+    /* RETURNING ONE LESS PENNY THAN SHOULD
+    // get amount of bills and coins of each denomination
+    cid.reverse();
+    for (let i = 0; i < cid.length; i++) {
+      coinAndBillAmounts.push(cid[i][1] / denominationValues[i]);
     }
-  }
-
-
-  for (let i = 0; i < changeToReturn.length; i++) {
-    for (let j = i + 1; j < changeToReturn.length; j++) {
-      if (changeToReturn[i][1] === changeToReturn[j][1]) {
-        changeToReturn[i][1] = (changeToReturn[i][1] + changeToReturn[j][1]);
-        changeToReturn.splice(1, 1);
+    // get dollar amount of each denomination to return
+    for (let i = 0; i < cid.length; i++) {
+      amt = 0;
+      if (changeDue >= denominationValues[i] && coinAndBillAmounts[i] > 0) {
+        while (changeDue >= denominationValues[i] && coinAndBillAmounts[i] > 0) {
+          amt += denominationValues[i];
+          changeDue -= denominationValues[i];
+          coinAndBillAmounts[i]--;
+        }
+        changeToReturn.push([cid[i][0], amt]);
       }
     }
+    */
+    console.log(changeToReturn);
+    return {status: "OPEN", change: changeToReturn};
   }
-
-  console.log(changeToReturn);
-
+  // functions
+  function getCidTotal(arr) {
+    let total = 0;
+    for (let i = 0; i < cid.length;i++) {
+      total += (arr[i][1]);
+    }
+    return total;
+  }
 }
 
-checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
