@@ -6,15 +6,20 @@
   --main-black: #393D3F;
 }
 
-body {
-  background-color: var(--main-gray);
+* {
+  border: solid black 1px;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: var(--main-gray);
+}
 
 h1 {
   color: var(--main-sinopia);
+  text-align: center;
 }
 
 p {
@@ -50,18 +55,24 @@ p {
 #welcome-section {
   background-color: var(--main-black);
   text-align: center;
-
+  margin-top: 0px;
 }
 
 #welcome-title {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 350%;
   margin-bottom: auto;
-  margin-top: 0;
+  padding-top: 4%;
+  color: var(--main-sinopia);
 }
 
 #welcome-subtitle {
   color: var(--main-blue);
-  padding-bottom: 10%;
+  padding: 5% 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 /* end welcome section style */
+
+/* start projects section */
+
+/* end projects section */
