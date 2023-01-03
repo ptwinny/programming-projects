@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="portfolio-ver2.css">
 </head>
 <body>
-  <header>
-    <h1>Phillip Twining's Project Portfolio</h1>
-  </header>
+
   <!-- start nav-bar -->
   <nav id="navbar">
     <ul class="nav-list">
@@ -44,43 +42,41 @@
     <section id="projects" class="projects-section">
       <h1>Some of my projects</h1>
       <div class="projects-grid">
-        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
-          <img src="" alt="">
-          <p>
-            <span class="project-title">Survey Form</span>
-          </p>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Survey Form</span></p>
         </a>
-        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/tribute-page-kathy-h.html">
-          <img src="" alt="">
-          <p><span class="project-title">Tribute Page</span></p>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/tribute-page-kathy-h.html">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Tribute Page</span></p>
         </a>
-        <a class="project-tile" href="">
-          <img src="" alt="">
-          <p><span class="project-title">Technical Documentation Page</span></p>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Technical Documentation Page</span></p>
         </a>
-        <a class="project-tile" href="">
-          <img src="" alt="">
-          <p><span class="project-title">Product Landing Page</span></p>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Product Landing Page</span></p>
         </a>
-        <a class="project-tile" href="">
-          <img src="" alt="">
-          <p><span class="project-title">Palindrome Checker</span></p>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Palindrome Checker</span></p>
         </a>
-        <a class="project-tile" href="">
-          <img src="" alt="">
-          <p><span class="project-title">Roman Numeral Converter</span></p>
+        <a class="projects-tile" href="">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Roman Numeral Converter</span></p>
         </a>
-        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
-          <img src="" alt="">
-          <p><span class="project-title">Caesar Cipher</span></p>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Caesar Cipher</span></p>
         </a>
-        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
-          <img src="" alt="">
-          <p><span class="project-title">Telephone Number Validator</span></p>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Telephone Number Validator</span></p>
         </a>
-        <a class="project-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
-          <img src="" alt="">
-          <p><span class="project-title">Cash Register</span></p>
+        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
+          <img class="projects-image" src="images/whale-logo.png" alt="">
+          <p class="projects-title"><span>Cash Register</span></p>
         </a>
       </div>
     </section>
