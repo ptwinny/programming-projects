@@ -16,15 +16,21 @@
 body {
   background-color: var(--main-gray);
 }
-
+/* start general */
 h1 {
   color: var(--main-sinopia);
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
   color: var(--main-black)
 }
+
+a {
+  text-decoration: none;
+}
+/* end general */
 
 /* start navigation styles */
 
@@ -36,6 +42,7 @@ p {
   left: 0;
   width: 100%;
   background-color: var(--main-sinopia);
+  z-index: 1;
 }
 
 .nav-item {
@@ -55,7 +62,8 @@ p {
 #welcome-section {
   background-color: var(--main-black);
   text-align: center;
-  margin-top: 0px;
+  position: relative;
+  top: 36px;
 }
 
 #welcome-title {
@@ -74,5 +82,19 @@ p {
 /* end welcome section style */
 
 /* start projects section */
-
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+}
+.projects-title {
+  text-align: center;
+}
+.projects-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
 /* end projects section */
