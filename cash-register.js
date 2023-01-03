@@ -1,23 +1,24 @@
 function checkCashRegister(price, cash, cid) {
   // variables and arrays
-  const denominationValues = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, .01];
+  const denominationValues = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
   let cidTotal = getCidTotal(cid);
   let coinAndBillAmounts = [];
-  let changeDue = cash - price;
+  let changeDue = (cash * 100) - (price * 100);
+  console.log(changeDue);
   let changeToReturn = [];
   let amt = 0;
 
-  // main section
+  /* main section */
+
   if (cidTotal < changeDue) {
     return { status: "INSUFFICIENT_FUNDS", change: [] };
   } else if (cidTotal === changeDue) {
     return { status: "CLOSED", change: cid };
-  } else {
-    /* RETURNING ONE LESS PENNY THAN SHOULD
+  } else if (cidTotal > changeDue) {
     // get amount of bills and coins of each denomination
     cid.reverse();
     for (let i = 0; i < cid.length; i++) {
-      coinAndBillAmounts.push(cid[i][1] / denominationValues[i]);
+      coinAndBillAmounts.push((cid[i][1] * 100) / denominationValues[i]);
     }
     // get dollar amount of each denomination to return
     for (let i = 0; i < cid.length; i++) {
@@ -27,19 +28,21 @@ function checkCashRegister(price, cash, cid) {
           amt += denominationValues[i];
           changeDue -= denominationValues[i];
           coinAndBillAmounts[i]--;
+          console.log("change returned: " + amt / 100 + " of " + denominationValues[i] / 100 + " " + "change remaining: " + changeDue / 100);
         }
-        changeToReturn.push([cid[i][0], amt]);
+        changeToReturn.push([cid[i][0], amt / 100]);
       }
     }
-    */
-    console.log(changeToReturn);
+    if (changeDue !== 0) {
+      return {status: "INSUFFICIENT_FUNDS", change: []};
+    }
     return {status: "OPEN", change: changeToReturn};
   }
   // functions
   function getCidTotal(arr) {
     let total = 0;
-    for (let i = 0; i < cid.length;i++) {
-      total += (arr[i][1]);
+    for (let i = 0; i < arr.length;i++) {
+      total += (arr[i][1] * 100);
     }
     return total;
   }
