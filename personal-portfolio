@@ -40,7 +40,7 @@
     
     <!-- start #projects-section -->
     <section id="projects" class="projects-section">
-      <h1>Some of my projects</h1>
+      <h1 class="section-header">Some of my projects</h1>
       <div class="projects-grid">
         <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
           <img class="projects-image" src="images/whale-logo.png" alt="">
@@ -89,7 +89,7 @@
     <!-- start contact-section -->
     <section id="contact" class="contact-section">
       <div class="contact-section-header">
-        <h2>Let's collaborate</h2>
+        <h1 class="section-header">Let's collaborate</h1>
       </div>
       <div class="contact-links">
         <a class="btn contact-details" href="mailto:phillip.twining@gmail.com">Send an email</a>
