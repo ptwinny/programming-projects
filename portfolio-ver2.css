@@ -13,8 +13,15 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--main-gray);
+  font-size: 1.8rem;
 }
 /* start general */
 h1 {
@@ -24,12 +31,18 @@ h1 {
 }
 
 p {
-  color: var(--main-black)
+  color: var(--main-black);
+  margin: 2%;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
 }
 
 a {
   text-decoration: none;
 }
+
+
 /* end general */
 
 /* start navigation styles */
@@ -45,31 +58,39 @@ a {
   z-index: 1;
 }
 
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
 .nav-item {
-  display: inline;
-  padding: 0% 10px;
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
 }
 
 .nav-link {
   color: var(--main-pink);
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 200%;
+  font-size: 2.2rem;
 }
-
 /* end navigation style */
+
 /* start welcome section style */
 #welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
   background-color: var(--main-black);
-  text-align: center;
-  position: relative;
-  top: 36px;
 }
 
 #welcome-title {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 350%;
-  margin-bottom: auto;
   padding-top: 4%;
   color: var(--main-sinopia);
 }
@@ -82,19 +103,42 @@ a {
 /* end welcome section style */
 
 /* start projects section */
+.projects-section {
+  position: relative;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  padding: 2%;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
 }
+
+.projects-tile {
+  border-radius: 6px;
+  background-color: var(--main-blue);
+}
+
 .projects-title {
   text-align: center;
+  font-size: 2rem;
 }
+
 .projects-image {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
 }
 /* end projects section */
