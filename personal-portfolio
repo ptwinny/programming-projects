@@ -1,111 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twining Portfolio</title>
-    <link rel="stylesheet" href="portfolio-ver2.css">
-</head>
-<body>
+:root {
+  --main-blue: #A0C1D1;
+  --main-red: #ff0000;
+  --main-orange: #fd9c00;
+  --main-pink: #DB93B0;
+  --main-yellow: #fff200;
+}
 
-  <!-- start nav-bar -->
-  <nav id="navbar">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#welcome-section" class="nav-link">About</a>
-      </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">Work</a>
-      </li>
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">Contact</a>  
-      </li>
-      <li class="nav-item">
-        <a id="profile-link" class="nav-link" href="https://github.com/ptwinny/programming-projects" target="_blank">
-          Github
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- end nav-bar -->
+* {
+  border: solid black 1px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <main>
-    <!-- start #welcome-section -->
-    <section id="welcome-section" class="welcome-section">
-      <h1 id="welcome-title">Phillip Twining</h1>
-      <p id="welcome-subtitle">front-end web developer</p>
-    </section> 
-    <!-- end #welcome-section -->
-    
-    <!-- start #projects-section -->
-    <section id="projects" class="projects-section">
-      <h1 class="section-header">Some of my projects</h1>
-      <div class="projects-grid">
-        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/survey.html">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Survey Form</span></p>
-        </a>
-        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/tribute-page-kathy-h.html">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Tribute Page</span></p>
-        </a>
-        <a class="projects-tile" href="">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Technical Documentation Page</span></p>
-        </a>
-        <a class="projects-tile" href="">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Product Landing Page</span></p>
-        </a>
-        <a class="projects-tile" href="">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Palindrome Checker</span></p>
-        </a>
-        <a class="projects-tile" href="">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Roman Numeral Converter</span></p>
-        </a>
-        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/caesar-cipher.js">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Caesar Cipher</span></p>
-        </a>
-        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/telephone-number-checker.js">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Telephone Number Validator</span></p>
-        </a>
-        <a class="projects-tile" href="https://github.com/ptwinny/programming-projects/blob/main/cash-register.js">
-          <img class="projects-image" src="images/whale-logo.png" alt="">
-          <p class="projects-title"><span>Cash Register</span></p>
-        </a>
-      </div>
-    </section>
-    <!-- end #projects-section -->
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
-    <aside>
-    
-    </aside>
+body {
+  background-color: var(--main-gray);
+  font-size: 1.8rem;
+}
+/* start general */
+h1 {
+  color: var(--main-orange);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    <!-- start contact-section -->
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
-        <h1 class="section-header">Let's collaborate</h1>
-      </div>
-      <div class="contact-links">
-        <a class="btn contact-details" href="mailto:phillip.twining@gmail.com">Send an email</a>
-      </div>
-      <div class="contact-links">
-        <a class="btn contact-details" target="_blank" href="https://github.com/ptwinny">Collaborate on Github</a>
-      </div>
-    </section>
-    <!-- end contact-section -->
+p {
+  color: var(--main-black);
+  margin: 2%;
+  padding: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
 
-  </main>
-  
+a {
+  text-decoration: none;
+}
 
 
-  <footer>
-    <p>footer stuff</p>
-  </footer>
-</body>
-</html>
+/* end general */
+
+/* start navigation styles */
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--main-orange);
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-link {
+  color: var(--main-red);
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+}
+/* end navigation style */
+
+/* start welcome section style */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-yellow);
+}
+
+#welcome-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 350%;
+  padding-top: 4%;
+  color: var(--main-orange);
+  text-shadow: 3px 3px 1px #000000;
+}
+
+#welcome-subtitle {
+  color: var(--main-orange);
+  padding: 5% 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-shadow: 3px 2px 1px #000000;
+}
+/* end welcome section style */
+
+/* start projects section */
+.projects-section {
+  position: relative;
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  padding: 2%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.projects-tile {
+  border-radius: 6px;
+  background-color: var(--main-blue);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.projects-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+/* end projects section */
