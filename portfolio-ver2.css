@@ -1,9 +1,9 @@
 :root {
   --main-blue: #A0C1D1;
-  --main-gray: #A9B2AC;
-  --main-sinopia: #BA5A31;
+  --main-red: #ff0000;
+  --main-orange: #fd9c00;
   --main-pink: #DB93B0;
-  --main-black: #393D3F;
+  --main-yellow: #fff200;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
 }
 /* start general */
 h1 {
-  color: var(--main-sinopia);
+  color: var(--main-orange);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -54,7 +54,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--main-sinopia);
+  background-color: var(--main-orange);
   z-index: 1;
 }
 
@@ -70,7 +70,7 @@ a {
 }
 
 .nav-link {
-  color: var(--main-pink);
+  color: var(--main-red);
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
@@ -85,20 +85,23 @@ a {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: var(--main-black);
+  background-color: var(--main-yellow);
 }
 
 #welcome-title {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'DM Serif Display', serif;
   font-size: 350%;
   padding-top: 4%;
-  color: var(--main-sinopia);
+  color: var(--main-orange);
+  text-shadow: 3px 3px 1px #000000;
 }
 
 #welcome-subtitle {
-  color: var(--main-blue);
+  color: var(--main-orange);
   padding: 5% 0;
   font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-shadow: 3px 2px 1px #000000;
 }
 /* end welcome section style */
 
