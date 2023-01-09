@@ -1,8 +1,9 @@
 :root {
-  --main-blue: #A0C1D1;
+  --main-blue: #48b1e6;
   --main-red: #ff0000;
   --main-orange: #fd9c00;
-  --main-pink: #DB93B0;
+  --main-darkgreen: #318c11;
+  --main-lightgreen: #5eff00;
   --main-yellow: #fff200;
 }
 
@@ -20,12 +21,12 @@ html {
 }
 
 body {
-  background-color: var(--main-gray);
+  background-color: var(--main-darkgreen);
   font-size: 1.8rem;
 }
 /* start general */
 h1 {
-  color: var(--main-orange);
+  color: var(--main-lightgreen);
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
