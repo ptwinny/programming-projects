@@ -34,9 +34,18 @@
 
   <main>
     <!-- start #welcome-section -->
+
     <section id="welcome-section" class="welcome-section">
-      <h1 id="welcome-title">Phillip Twining</h1>
-      <p id="welcome-subtitle">front-end web developer</p>
+      <svg class="welcome-text" viewBox="-10 0 450 50">
+        <text id="title-black-outline" x="10" y="40">Phillip Twining</text>
+        <text id="title-orange-outline" x="10" y="40">Phillip Twining</text>
+        <text id="title" x="10" y="40">Phillip Twining</text>
+      </svg>
+      <svg class="welcome-text" id="welcome-subtitle">
+        <text id="subtitle-black-outline" x="10" y="40">front-end web developer</text>
+        <text id="subtitle-orange-outline" x="10" y="40">front-end web developer</text>
+        <text id="subtitle" x="10" y="40">front-end web developer</text>
+      </svg>
     </section> 
     <!-- end #welcome-section -->
     
