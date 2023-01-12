@@ -1,11 +1,14 @@
 :root {
-  --main-blue: #48b1e6;
+  --main-blue: #002aff;
   --main-red: #ff0000;
   --main-orange: #fd9c00;
+  --main-red-orange: #ff5e00;
   --main-lightorange: #ffc400;
   --main-darkgreen: #318c11;
   --main-lightgreen: #5eff00;
   --main-yellow: #fff200;
+  --main-purple: #6F0B8D;
+  --main-pink: #ff00c8;
 }
 
 * {
@@ -98,8 +101,8 @@ svg {
   font-weight: bold;
   width: 450px;
   height: 270px;
-  transform: rotate3d(2, 2, 2, -15deg);
-  margin-bottom: -75px;
+  transform: rotate(-15deg);
+  margin: 70px 100px -75px 0px;
   overflow: visible;
   word-spacing: -7px;
 }
@@ -113,7 +116,8 @@ svg {
 }
 
 #welcome-subtitle {
-  margin-left: 67px;
+  margin-left: 125px;
+  margin-top: -10px;
 }
 
 #title-orange-outline {
@@ -127,7 +131,55 @@ svg {
 #title-black-outline {
   fill: white;
   stroke: black;
-  stroke-width: 34px;
+  stroke-width: 36px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-six {
+  fill: white;
+  stroke: var(--main-red-orange);
+  stroke-width: 40px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-five {
+  fill: white;
+  stroke: var(--main-darkgreen);
+  stroke-width: 44px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-four {
+  fill: white;
+  stroke: var(--main-red);
+  stroke-width: 48px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-three {
+  fill: white;
+  stroke: var(--main-purple);
+  stroke-width: 52px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-two {
+  fill: white;
+  stroke: var(--main-pink);
+  stroke-width: 56px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-change-color-one {
+  fill: white;
+  stroke: var(--main-blue);
+  stroke-width: 60px;
   stroke-linejoin: round;
   paint-order: stroke;
 }
@@ -153,7 +205,7 @@ svg {
   font-family: 'Courier New', Courier, monospace;
   fill: white;
   stroke: black;
-  stroke-width: 19px;
+  stroke-width: 20px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
@@ -162,6 +214,10 @@ svg {
 /* end welcome section style */
 
 /* start projects section */
+#projects {
+  background-color: var(--main-red-orange);
+}
+
 .projects-section {
   position: relative;
   text-align: center;
@@ -201,3 +257,17 @@ svg {
   border-radius: 6px 6px 0px 0px;
 }
 /* end projects section */
+
+/* start contact section */
+#contact {
+  background-color: var(--main-lightgreen);
+}
+/* end contact section */
+
+/* start footer section */
+footer {
+  background-color: var(--main-red);
+}
+
+
+/* end footer section */
