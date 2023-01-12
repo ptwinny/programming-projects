@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="portfolio-ver2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); </style>
+    <script src="portfolio.js"></script>
 </head>
 <body>
 
@@ -37,6 +38,12 @@
 
     <section id="welcome-section" class="welcome-section">
       <svg class="welcome-text" viewBox="-10 0 450 50">
+        <text class="title-change-color" id="title-change-color-one" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-two" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-three" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-four" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-five" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-change-color-six" x="10" y="40">Phillip Twining</text>
         <text id="title-black-outline" x="10" y="40">Phillip Twining</text>
         <text id="title-orange-outline" x="10" y="40">Phillip Twining</text>
         <text id="title" x="10" y="40">Phillip Twining</text>
