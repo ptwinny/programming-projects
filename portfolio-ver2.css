@@ -1,8 +1,10 @@
 :root {
+  --main-lightblue: #00bfff;
   --main-blue: #002aff;
   --main-red: #ff0000;
   --main-orange: #fd9c00;
   --main-red-orange: #ff5e00;
+  --main-dark-orange: #c73e04;
   --main-lightorange: #ffc400;
   --main-darkgreen: #318c11;
   --main-lightgreen: #5eff00;
@@ -80,7 +82,6 @@ a {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bolder;
   font-size: 2.2rem;
-  text-shadow: 1px 2px 0px #000000;
 }
 /* end navigation style */
 
@@ -107,7 +108,7 @@ svg {
   word-spacing: -7px;
 }
 
-#title, #subtitle {
+#title, #subtitle, .section-header {
   fill: white;
   stroke: black;
   stroke-width: 10px;
@@ -184,6 +185,10 @@ svg {
   paint-order: stroke;
 }
 
+#welcome-subtitle {
+  padding-top: 2%;
+}
+
 #subtitle {
   font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
@@ -211,6 +216,66 @@ svg {
   font-size: 50%;
 }
 
+#subtitle-change-color-six {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-red-orange);
+  stroke-width: 24px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
+#subtitle-change-color-five {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-darkgreen);
+  stroke-width: 28px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
+#subtitle-change-color-four {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-red);
+  stroke-width: 32px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
+#subtitle-change-color-three {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-purple);
+  stroke-width: 36px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
+#subtitle-change-color-two {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-pink);
+  stroke-width: 40px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
+#subtitle-change-color-one {
+  font-family: 'Courier New', Courier, monospace;
+  fill: white;
+  stroke: var(--main-blue);
+  stroke-width: 44px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  font-size: 50%;
+}
+
 /* end welcome section style */
 
 /* start projects section */
@@ -225,9 +290,24 @@ svg {
 }
 
 .section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  padding: 2%;
+  transform: rotate(15deg);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  letter-spacing: 4px;
+}
+
+#projects-header {
+  fill: var(--main-red-orange);
+  stroke: white;
+  stroke-width: 4px;
+}
+
+#projects-header-white-outline {
+  fill: white;
+  stroke: black;
+  stroke-width: 18px;
+  stroke-linejoin: round;
+  paint-order: stroke;
 }
 
 .projects-grid {
@@ -242,7 +322,8 @@ svg {
 
 .projects-tile {
   border-radius: 6px;
-  background-color: var(--main-blue);
+  background-color: var(--main-lightblue);
+  box-shadow: 10px 10px var(--main-dark-orange);
 }
 
 .projects-title {
