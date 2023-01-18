@@ -15,17 +15,17 @@
   <!-- start nav-bar -->
   <nav id="navbar">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="#welcome-section" class="nav-link">ABOUT</a>
+      <li class="nav-item" id="about-li">
+        <a href="#welcome-section" class="nav-link" id="about-link">ABOUT</a>
       </li>
-      <li class="nav-item">
-        <a href="#projects" class="nav-link">WORK</a>
+      <li class="nav-item" id="work-li">
+        <a href="#projects" class="nav-link" id="work-link">WORK</a>
       </li>
-      <li class="nav-item">
-        <a href="#contact" class="nav-link">CONTACT</a>  
+      <li class="nav-item" id="contact-li">
+        <a href="#contact" class="nav-link" id="contact-link">CONTACT</a>  
       </li>
-      <li class="nav-item">
-        <a id="profile-link" class="nav-link" href="https://github.com/ptwinny/programming-projects" target="_blank">
+      <li class="nav-item" id="github-li">
+        <a id="github-link" class="nav-link" href="https://github.com/ptwinny/programming-projects" target="_blank">
           GITHUB
         </a>
       </li>
@@ -38,16 +38,17 @@
 
       <!-- TODO: make strokes fade and rotate in, and title stamp effect after -->
     <section id="welcome-section" class="welcome-section">
-      <svg class="welcome-text" viewBox="-10 0 450 50">
+      <svg class="welcome-text" id="welcome-title" viewBox="-10 0 450 50">
         <text class="title-change-color" id="title-change-color-one" x="10" y="40">Phillip Twining</text>
         <text class="title-change-color" id="title-change-color-two" x="10" y="40">Phillip Twining</text>
         <text class="title-change-color" id="title-change-color-three" x="10" y="40">Phillip Twining</text>
         <text class="title-change-color" id="title-change-color-four" x="10" y="40">Phillip Twining</text>
         <text class="title-change-color" id="title-change-color-five" x="10" y="40">Phillip Twining</text>
         <text class="title-change-color" id="title-change-color-six" x="10" y="40">Phillip Twining</text>
-        <text id="title-black-outline" x="10" y="40">Phillip Twining</text>
-        <text id="title-orange-outline" x="10" y="40">Phillip Twining</text>
-        <text id="title" x="10" y="40">Phillip Twining</text>
+        <text class="title-change-color" id="title-blank" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title-black-outline" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title-orange-outline" x="10" y="40">Phillip Twining</text>
+        <text class="title-main" id="title" x="10" y="40">Phillip Twining</text>
       </svg>
       <svg class="welcome-text" id="welcome-subtitle">
         <text class="subtitle-change-color" id="subtitle-change-color-one" x="10" y="40">front-end web developer</text>
@@ -56,9 +57,9 @@
         <text class="subtitle-change-color" id="subtitle-change-color-four" x="10" y="40">front-end web developer</text>
         <text class="subtitle-change-color" id="subtitle-change-color-five" x="10" y="40">front-end web developer</text>
         <text class="subtitle-change-color" id="subtitle-change-color-six" x="10" y="40">front-end web developer</text>
-        <text id="subtitle-black-outline" x="10" y="40">front-end web developer</text>
-        <text id="subtitle-orange-outline" x="10" y="40">front-end web developer</text>
-        <text id="subtitle" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle-black-outline" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle-orange-outline" x="10" y="40">front-end web developer</text>
+        <text class="subtitle-main" id="subtitle" x="10" y="40">front-end web developer</text>
       </svg>
     </section> 
     <!-- end #welcome-section -->
