@@ -63,6 +63,18 @@ a {
   width: 100%;
   background-color: var(--main-orange);
   z-index: 1;
+  animation-name: slidein;
+  animation-duration: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .nav-list {
@@ -74,6 +86,40 @@ a {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+}
+
+#about-link {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+#work-link {
+  animation-name: fadein;
+  animation-duration: 3s;
+}
+
+#contact-link {
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+#github-link {
+  animation-name: fadein;
+  animation-duration: 5s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  
+  50% {
+    opacity: 10%;
+  }
+  
+  100% {
+    opacity: 100%;
+  }
 }
 
 .nav-link {
@@ -98,14 +144,14 @@ a {
 
 svg {
   font-family: 'DM Serif Display', serif;
-  font-size: 350%;
+  font-size: 450%;
   font-weight: bold;
   width: 450px;
   height: 270px;
   transform: rotate(-15deg);
-  margin: 70px 100px -75px 0px;
+  margin: 70px 100px -75px -25px;
   overflow: visible;
-  word-spacing: -7px;
+  word-spacing: -15px;
 }
 
 #title, #subtitle, .section-header {
@@ -119,6 +165,7 @@ svg {
 #welcome-subtitle {
   margin-left: 125px;
   margin-top: -10px;
+  margin-left: 110px;
 }
 
 #title-orange-outline {
@@ -138,49 +185,62 @@ svg {
 }
 
 #title-change-color-six {
-  fill: white;
+  fill: none;
   stroke: var(--main-red-orange);
   stroke-width: 40px;
   stroke-linejoin: round;
   paint-order: stroke;
+  animation-delay: .5s;
 }
 
 #title-change-color-five {
-  fill: white;
+  fill: none;
   stroke: var(--main-darkgreen);
   stroke-width: 44px;
   stroke-linejoin: round;
   paint-order: stroke;
+  animation-delay: .4s;
 }
 
 #title-change-color-four {
-  fill: white;
+  fill: none;
   stroke: var(--main-red);
   stroke-width: 48px;
   stroke-linejoin: round;
   paint-order: stroke;
+  animation-delay: .3s;
 }
 
 #title-change-color-three {
-  fill: white;
+  fill: none;
   stroke: var(--main-purple);
   stroke-width: 52px;
   stroke-linejoin: round;
   paint-order: stroke;
+  animation-delay: .2s;
 }
 
 #title-change-color-two {
-  fill: white;
+  fill: none;
   stroke: var(--main-pink);
   stroke-width: 56px;
   stroke-linejoin: round;
   paint-order: stroke;
+  animation-delay: .1s;
 }
 
 #title-change-color-one {
-  fill: white;
+  fill: none;
   stroke: var(--main-blue);
   stroke-width: 60px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
+#title-blank {
+  fill: var(--main-yellow);
+  stroke: var(--main-yellow);
+  stroke-width: 36px;
   stroke-linejoin: round;
   paint-order: stroke;
 }
@@ -216,64 +276,126 @@ svg {
   font-size: 50%;
 }
 
+.subtitle-change-color {
+  animation-name: spin, opacity;
+  animation-delay: 0.5s, 0s;
+  animation-duration: 2.5s, 0.5s;
+  transform-origin: 80% 80%;
+  animation-direction: reverse, normal;
+}
+
 #subtitle-change-color-six {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-red-orange);
   stroke-width: 24px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+  animation-delay: 0.5s;
 }
 
 #subtitle-change-color-five {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-darkgreen);
   stroke-width: 28px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+  animation-delay: 0.4s;
 }
 
 #subtitle-change-color-four {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-red);
   stroke-width: 32px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+  animation-delay: 0.3s;
 }
 
 #subtitle-change-color-three {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-purple);
   stroke-width: 36px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+  animation-delay: 0.2s;
 }
 
 #subtitle-change-color-two {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-pink);
   stroke-width: 40px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+  animation-delay: 0.1s;
 }
 
 #subtitle-change-color-one {
   font-family: 'Courier New', Courier, monospace;
-  fill: white;
+  fill: none;
   stroke: var(--main-blue);
   stroke-width: 44px;
   stroke-linejoin: round;
   paint-order: stroke;
   font-size: 50%;
+}
+
+.title-main {
+  animation-name: opacity, scale;
+  animation-duration: 3.1s, .5s;
+  animation-delay: 0s, 3s;
+}
+
+.subtitle-main {
+  animation-name: opacity, scale;
+  animation-duration: 3.6s, .5s;
+  animation-delay: 0s, 3.5s;
+}
+
+@keyframes scale {
+  from {
+    scale: 1000%;
+  }
+
+  to {
+    scale: 100%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform-origin: 85% 10%;
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title-change-color {
+  animation-name: spin;
+  animation-duration: 3s;
 }
 
 /* end welcome section style */
