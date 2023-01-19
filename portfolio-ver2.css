@@ -7,17 +7,20 @@
   --main-dark-orange: #c73e04;
   --main-lightorange: #ffc400;
   --main-darkgreen: #318c11;
-  --main-lightgreen: #5eff00;
+  --main-lightgreen: #8cff00;
   --main-yellow: #fff200;
   --main-purple: #6F0B8D;
   --main-pink: #ff00c8;
 }
 
 * {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
 }
 
 html {
@@ -245,15 +248,23 @@ svg {
   paint-order: stroke;
 }
 
+#subtitle-blank {
+  fill: var(--main-yellow);
+  stroke: var(--main-yellow);
+  stroke-width: 15px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+
 #welcome-subtitle {
   padding-top: 2%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 225%;
 }
 
 #subtitle {
-  font-family: 'Courier New', Courier, monospace;
   font-weight: lighter;
   stroke-width: 5px;
-  font-size: 50%;
 }
 
 #subtitle-orange-outline {
@@ -263,7 +274,6 @@ svg {
   stroke-width: 15px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
 }
 
 #subtitle-black-outline {
@@ -273,7 +283,6 @@ svg {
   stroke-width: 20px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
 }
 
 .subtitle-change-color {
@@ -291,7 +300,6 @@ svg {
   stroke-width: 24px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
   animation-delay: 0.5s;
 }
 
@@ -302,7 +310,6 @@ svg {
   stroke-width: 28px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
   animation-delay: 0.4s;
 }
 
@@ -313,7 +320,6 @@ svg {
   stroke-width: 32px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
   animation-delay: 0.3s;
 }
 
@@ -324,7 +330,6 @@ svg {
   stroke-width: 36px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
   animation-delay: 0.2s;
 }
 
@@ -335,7 +340,6 @@ svg {
   stroke-width: 40px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
   animation-delay: 0.1s;
 }
 
@@ -346,7 +350,6 @@ svg {
   stroke-width: 44px;
   stroke-linejoin: round;
   paint-order: stroke;
-  font-size: 50%;
 }
 
 .title-main {
@@ -462,8 +465,54 @@ svg {
 /* end projects section */
 
 /* start contact section */
-#contact {
-  background-color: var(--main-lightgreen);
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-lightgreen);
+}
+
+.contact-section-header .section-header {
+  color: var(--main-darkgreen);
+  transform: none;
+  font-size: 6rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-links a {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-yellow);
 }
 /* end contact section */
 
