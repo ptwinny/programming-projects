@@ -2,6 +2,7 @@
   --main-lightblue: #00bfff;
   --main-blue: #002aff;
   --main-red: #ff0000;
+  --main-darkred: #8c0101;
   --main-orange: #fd9c00;
   --main-red-orange: #ff5e00;
   --main-dark-orange: #c73e04;
@@ -111,6 +112,10 @@ a {
   animation-duration: 5s;
 }
 
+#blog-link {
+  animation: 6s fadein;
+}
+
 @keyframes fadein {
   0% {
     opacity: 0%;
@@ -131,10 +136,93 @@ a {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bolder;
   font-size: 2.2rem;
+  text-shadow: 1px 1px var(--main-darkred);
 }
 /* end navigation style */
 
 /* start welcome section style */
+/* start stars subsection */
+.stars, .small-stars {
+  position: absolute;
+  animation: 1s linear infinite bounce;
+}
+
+#star1, #small-star2, #star3, #small-star4, #star5, #small-star6 {
+  animation-duration: 1.3s;
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {transform: translateY(0);} 
+  25% {transform: translateY(-15px);} 
+  75% {transform: translateY(15px);} 
+} 
+
+#star1 {
+  left: 10%;
+  top: 66%;
+}
+
+#star2 {
+  top: 10%;
+  left: 12%;
+}
+
+#star3 {
+  top: 70%;
+  left: 33%;
+}
+
+#star4 {
+  top: 15%;
+  left: 52%;
+}
+
+#star5 {
+  top: 80%;
+  left: 75%
+}
+
+#star6 {
+  top: 33%;
+  left: 85%;
+}
+
+#small-star1 {
+  top: 55%;
+  left: 6%;
+}
+
+#small-star2 {
+  top: 25%;
+  left: 26%;
+}
+
+#small-star3 {
+  top: 82%;
+  left: 46%;
+}
+
+#small-star4 {
+  top: 92%;
+  left: 56%;
+}
+
+#small-star5 {
+  top: 75%;
+  left: 67%;
+}
+
+#small-star6 {
+  top: 25%;
+  left: 76%;
+}
+
+#small-star7 {
+  top: 65%;
+  left: 89%;
+}
+
+/* end stars subsection */
 #welcome-section {
   display: flex;
   flex-direction: column;
