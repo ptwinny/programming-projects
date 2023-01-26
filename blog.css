@@ -16,9 +16,10 @@ body {
 
 p {
   text-indent: 2em;
+  color: var(--main-blue);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   color: var(--main-orange);
 }
 
@@ -28,8 +29,7 @@ h1, h2, h3, h4 {
   font-size: 40px;
   text-align: center;
   background-color: var(--main-black);
-  border: 10px var(--main-blue);
-  border-style: dotted solid solid solid;
+  border: 1px solid var(--main-blue);
 }
 
 /* two unequal colums that float next to each other */
@@ -58,8 +58,7 @@ h1, h2, h3, h4 {
 /* card effect for articles */
 .card {
   background-color: var(--main-black);
-  border: 5px var(--main-blue);
-  border-style: solid dotted solid dotted;
+  border: 1px solid var(--main-blue);
   padding: 20px;
   margin-top: 20px;
 }
@@ -80,8 +79,9 @@ h1, h2, h3, h4 {
 .footer {
   padding: 20px;
   text-align: center;
-  background-color: #ddd;
+  background-color: var(--main-black);
   margin-top: 20px;
+  border: 1px solid var(--main-blue);
 }
 
 /* responsive layout */
